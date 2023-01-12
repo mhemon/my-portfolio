@@ -95,14 +95,16 @@ main {
 }
 
 .about {
+    margin-top: 30px;
     background: #FFF8F3;
-    margin-top: 130px;
-    padding: 130px 150px;
     text-align: center;
+    padding: 30px;
+    margin-bottom: 39px;
 }
 
 .section-title {
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 35px;
     text-align: center;
@@ -136,7 +138,7 @@ main {
 
 /* what i do css */
 .what-i-do {
-    margin: 130px;
+    /* margin: 130px; */
     /* text-align: center;
     font-weight: 700;
     font-size: 35px;  */
@@ -258,3 +260,91 @@ main {
     color: #FD6E0A;
     text-align: center; 
 } */
+
+/* responsive code */
+@media screen and (max-width:576px) {
+    .banner{
+        margin: 10px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 50px;
+    }
+    .header{
+        background-image: none;
+    }
+    li .btn-primary{
+        height: 100%;
+        padding: 0;
+        font-size: 16px;
+        width: 20vw;
+    }
+    .btn-contact{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .skill-container,.resume-content,.contact,.banner,nav{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    nav{
+        padding: 10px;
+    }
+    nav li{
+        margin-left: 5px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 10px;
+    }
+    .about{
+        margin-top: 5px;
+    }
+    .about-info-container {
+        flex-direction: column;
+    }
+
+    .section-description{
+        text-align: justify;
+    }
+
+    .contact input[type="text"], input[type="email"], textarea {
+        padding: 10px 5px;
+    }
+    .contact{
+        gap: 10px;
+    }
+    .message-section{
+        border: 3px solid white;
+    }
+    .resume-title {
+        margin-top: 10px;
+    }
+
+    .what-i-do .section-description{
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .skill-container,.resume-content{
+        justify-content: space-around;
+        padding: 10px 20px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+    .banner .btn-primary{
+        width: 100%;
+    }
+}
+
+/* display hide */
+.hide{
+    display: none;
+}
